@@ -1,0 +1,1260 @@
+# Create a Retro-Style Projectile Motion Math Reviewer Website
+
+Create a **complete, functional, static, single-page mathematics reviewer website** designed to help students practice and master Projectile Motion.
+
+The website should have a **simple retro educational computer aesthetic**, inspired by old-school computer programs, pixel graphics, and retro games. Keep the interface clean, readable, and easy to navigate.
+
+The website is a mathematics reviewer, **not a game**. Its main purpose is to help students understand projectile motion, practice physics problems at different difficulty levels, and learn from their mistakes.
+
+# 1. MAIN REQUIREMENTS
+
+The website must include two main modes:
+
+- **PRACTICE MODE** — Students practice one question at a time, with immediate feedback and explanations.
+- **MOCK TEST MODE** — Students take a test with randomized questions and receive their results and detailed solutions after submitting.
+
+The website must include:
+
+- Selectable difficulty levels from 1 to 5 in Practice Mode.
+- Randomized question generation.
+- Multiple-choice questions with plausible incorrect answers.
+- Step-by-step mathematical solutions.
+- Questions involving initial velocity, final velocity, acceleration, time, displacement, and distance.
+- Questions involving horizontal and vertical velocity components.
+- Questions involving launch angles.
+- Questions involving maximum height, time of flight, and horizontal range.
+- Questions involving objects launched horizontally and at an angle.
+- Questions involving objects launched from elevated positions.
+- Correct mathematical answer checking.
+- A retro-style interface.
+- Full GitHub Pages compatibility.
+
+## DO NOT include:
+
+- Points, XP, coins, or leaderboards.
+- Lives, hearts, or streaks.
+- Timers or time limits.
+- Student accounts or login systems.
+- Unlockable levels or difficulty progression.
+- Unnecessary animations.
+- A requirement to connect an external AI API.
+- A backend server or database.
+
+Students should be free to practice without competitive game mechanics.
+
+---
+
+# 2. TOPICS COVERED
+
+The reviewer should cover the following projectile motion concepts.
+
+Use the standard ideal projectile motion model:
+
+- Neglect air resistance.
+- Assume constant gravitational acceleration.
+- Use \(g=9.8\text{ m/s}^2\) by default.
+- Treat horizontal acceleration as zero.
+- Treat vertical acceleration as constant downward acceleration.
+- Use a consistent coordinate system and sign convention throughout each problem.
+
+Allow the question generator to use \(g=9.8\text{ m/s}^2\) or \(g=10\text{ m/s}^2\), but clearly state which value is being used in every question.
+
+## Topic 1: Understanding Projectile Motion
+
+Test the student's understanding of the fundamental characteristics of projectile motion.
+
+Include questions involving:
+
+- The definition of projectile motion.
+- The horizontal and vertical components of motion.
+- The effect of gravity.
+- The independence of horizontal and vertical motion.
+- Horizontal acceleration.
+- Vertical acceleration.
+- The trajectory of a projectile.
+- Velocity at different points along the trajectory.
+- The behavior of a projectile at its highest point.
+
+Important concepts:
+
+- Horizontal acceleration is zero when air resistance is neglected.
+- Vertical acceleration is always directed downward.
+- Horizontal velocity remains constant.
+- Vertical velocity changes due to gravity.
+- At the highest point, vertical velocity is zero, but horizontal velocity is not necessarily zero.
+- The trajectory of an ideal projectile is parabolic.
+
+Include conceptual multiple-choice questions and scenarios requiring students to identify correct physical interpretations.
+
+## Topic 2: Horizontal and Vertical Velocity Components
+
+Teach students how to resolve an initial velocity into horizontal and vertical components.
+
+Rules:
+
+\[
+v_{ix}=v_i\cos\theta
+\]
+
+\[
+v_{iy}=v_i\sin\theta
+\]
+
+Where:
+
+- \(v_i\) = initial velocity.
+- \(v_{ix}\) = horizontal initial velocity.
+- \(v_{iy}\) = vertical initial velocity.
+- \(\theta\) = launch angle measured from the horizontal.
+
+Include questions involving:
+
+- Finding horizontal velocity.
+- Finding vertical velocity.
+- Finding initial velocity from its components.
+- Finding the launch angle.
+- Finding an angle from velocity components.
+- Resolving velocities at different launch angles.
+- Identifying the correct trigonometric function.
+- Determining the direction of velocity components.
+
+Vary the launch angles, including angles such as 15°, 30°, 37°, 45°, 53°, 60°, and 75°.
+
+Do not always use special angles with easy trigonometric values.
+
+## Topic 3: Initial Velocity
+
+Teach students how to determine the initial velocity of a projectile.
+
+Include questions involving:
+
+- Finding initial velocity from horizontal and vertical components.
+- Finding initial velocity from time and displacement.
+- Finding initial velocity using final velocity and acceleration.
+- Finding initial velocity from launch angle and horizontal or vertical components.
+- Finding initial velocity from maximum height.
+- Finding initial velocity from horizontal range and time.
+
+Useful equations include:
+
+\[
+v_i=\sqrt{v_{ix}^2+v_{iy}^2}
+\]
+
+\[
+v_i=\frac{v_{ix}}{\cos\theta}
+\]
+
+\[
+v_i=\frac{v_{iy}}{\sin\theta}
+\]
+
+Include both direct and multi-step problems.
+
+## Topic 4: Final Velocity
+
+Teach students how to calculate the final velocity of a projectile at a given time or position.
+
+Important equations:
+
+\[
+v_{fx}=v_{ix}
+\]
+
+\[
+v_{fy}=v_{iy}-gt
+\]
+
+The final velocity magnitude is:
+
+\[
+v_f=\sqrt{v_{fx}^2+v_{fy}^2}
+\]
+
+Include questions involving:
+
+- Finding final horizontal velocity.
+- Finding final vertical velocity.
+- Finding final velocity magnitude.
+- Finding the direction of final velocity.
+- Finding velocity at the highest point.
+- Finding velocity immediately before impact.
+- Finding velocity after a specified amount of time.
+- Finding final velocity from displacement and time.
+
+Students should understand that horizontal and vertical final velocities behave differently.
+
+Do not incorrectly treat final velocity as a single scalar when the question requires vector components.
+
+## Topic 5: Time of Flight
+
+Teach students how to calculate how long a projectile remains in the air.
+
+For a projectile that lands at the same height from which it was launched:
+
+\[
+T=\frac{2v_i\sin\theta}{g}
+\]
+
+For a projectile launched horizontally from a height:
+
+\[
+T=\sqrt{\frac{2h}{g}}
+\]
+
+For different launch and landing heights, use the vertical displacement equation:
+
+\[
+\Delta y=v_{iy}t-\frac12gt^2
+\]
+
+Include questions involving:
+
+- Finding total time of flight.
+- Finding time to reach maximum height.
+- Finding time from vertical displacement.
+- Finding time for a horizontally launched projectile.
+- Finding time when launch and landing heights differ.
+- Determining whether a projectile has reached its highest point.
+- Finding the time at which a projectile reaches a specified vertical position.
+
+For elevated launches, use the physically valid positive time solution.
+
+## Topic 6: Maximum Height
+
+Teach students how to calculate the maximum height reached by a projectile.
+
+For a projectile launched from ground level:
+
+\[
+H=\frac{(v_i\sin\theta)^2}{2g}
+\]
+
+For a projectile launched from an elevated position:
+
+\[
+H_{\text{relative}}=\frac{v_{iy}^2}{2g}
+\]
+
+The maximum height above the ground is:
+
+\[
+H_{\text{ground}}=h+\frac{v_{iy}^2}{2g}
+\]
+
+Include questions involving:
+
+- Finding maximum height.
+- Finding initial vertical velocity from maximum height.
+- Finding launch speed from maximum height and angle.
+- Finding time to maximum height.
+- Finding maximum height above the launch point.
+- Finding maximum height above the ground.
+- Comparing maximum heights at different launch angles.
+
+Emphasize the distinction between maximum height measured from the launch point and maximum height measured from the ground.
+
+## Topic 7: Horizontal Range
+
+Teach students how to calculate the horizontal distance traveled by a projectile.
+
+For a projectile launched and landing at the same height:
+
+\[
+R=\frac{v_i^2\sin(2\theta)}{g}
+\]
+
+The general horizontal displacement equation is:
+
+\[
+\Delta x=v_{ix}t
+\]
+
+Include questions involving:
+
+- Finding horizontal range.
+- Finding horizontal velocity.
+- Finding launch speed from range and angle.
+- Finding launch angle from range and speed.
+- Finding range using horizontal velocity and time.
+- Comparing the ranges of different launch angles.
+- Finding the range of a projectile launched horizontally.
+- Finding horizontal displacement when launch and landing heights differ.
+
+Include conceptual questions about the relationship between launch angle and range.
+
+For ideal projectiles launched and landing at the same height with the same initial speed, complementary launch angles produce equal horizontal ranges.
+
+## Topic 8: Horizontal Projectile Motion
+
+Teach students how to solve problems involving objects launched horizontally from an elevated position.
+
+Characteristics:
+
+- Initial vertical velocity is zero.
+- Initial horizontal velocity is equal to the launch speed.
+- Horizontal velocity remains constant.
+- Vertical velocity increases in magnitude due to gravity.
+
+Useful equations:
+
+\[
+\Delta x=v_xt
+\]
+
+\[
+\Delta y=-\frac12gt^2
+\]
+
+\[
+v_y=-gt
+\]
+
+Include questions involving:
+
+- Finding time of flight.
+- Finding horizontal range.
+- Finding vertical displacement.
+- Finding final vertical velocity.
+- Finding final velocity magnitude.
+- Finding the velocity direction immediately before impact.
+- Finding the initial horizontal velocity.
+- Finding the launch height from time or range.
+- Finding the height of a cliff or building.
+
+Use different real-world scenarios such as balls rolling off tables, objects leaving cliffs, and packages dropped horizontally from moving platforms.
+
+## Topic 9: Angled Projectile Motion
+
+Teach students how to solve problems involving projectiles launched at an angle above or below the horizontal.
+
+Include:
+
+- Launch angles above the horizontal.
+- Launch angles below the horizontal where appropriate.
+- Finding horizontal and vertical components.
+- Finding time of flight.
+- Finding maximum height.
+- Finding horizontal range.
+- Finding final velocity.
+- Finding the direction of final velocity.
+- Determining the projectile's position at a particular time.
+
+Questions should include both ground-level launches and elevated launches.
+
+## Topic 10: Mixed Projectile Motion Problems
+
+This is one of the most important topics.
+
+Generate problems requiring students to combine multiple projectile motion equations in a single question.
+
+Examples:
+
+**Example A: Finding final velocity**
+
+A ball is launched at 25 m/s at an angle of 40° above the horizontal. Determine its velocity after 2 seconds.
+
+**Example B: Finding launch velocity**
+
+A projectile reaches a maximum height of 20 m. Determine its initial vertical velocity, assuming \(g=10\text{ m/s}^2\).
+
+**Example C: Finding horizontal range**
+
+A projectile is launched horizontally from a 45-meter-high cliff with a horizontal velocity of 12 m/s. Determine how far it travels before hitting the ground.
+
+**Example D: Finding launch angle**
+
+A projectile is launched at 30 m/s and has an initial vertical velocity of 15 m/s. Determine its launch angle.
+
+These are illustrative examples. Generate varied problems rather than repeating them.
+
+Include questions requiring:
+
+- Finding initial velocity and then final velocity.
+- Finding time and then horizontal range.
+- Finding maximum height and time to maximum height.
+- Finding final velocity magnitude and direction.
+- Finding launch angle from velocity components.
+- Combining horizontal and vertical displacement equations.
+- Solving problems with different initial and final heights.
+- Determining multiple unknown quantities from the given information.
+
+---
+
+# 3. HOME SCREEN
+
+Create a simple home screen displaying:
+
+**PHYSICS REVIEWER**
+
+Subtitle:
+
+**PROJECTILE MOTION**
+
+Display two large buttons:
+
+- PRACTICE MODE
+- MOCK TEST MODE
+
+Below the buttons, show the available topics in a small, organized list.
+
+Use a simple retro-inspired layout with rectangular buttons, clear labels, and thin borders.
+
+---
+
+# 4. PRACTICE MODE
+
+Practice Mode should present one question at a time and allow students to practice indefinitely.
+
+Before starting, students must configure their practice session.
+
+## Topic Selection
+
+Provide a checkbox for every topic:
+
+1. Understanding Projectile Motion
+2. Horizontal and Vertical Velocity Components
+3. Initial Velocity
+4. Final Velocity
+5. Time of Flight
+6. Maximum Height
+7. Horizontal Range
+8. Horizontal Projectile Motion
+9. Angled Projectile Motion
+10. Mixed Projectile Motion Problems
+
+Include:
+
+- SELECT ALL
+- CLEAR ALL
+
+Require at least one selected topic before starting.
+
+When multiple topics are selected, the question generator must be capable of generating questions from all selected topics.
+
+The mixed projectile motion topic must generate genuine multi-equation problems rather than simply relabeling a single-equation question.
+
+## Difficulty Selection
+
+Allow students to select one or multiple difficulty levels.
+
+### LEVEL 1 — Very Basic
+
+Questions should test direct understanding of individual projectile motion concepts.
+
+Examples:
+
+- Identifying the acceleration due to gravity.
+- Identifying horizontal acceleration.
+- Finding vertical velocity after a short period.
+- Resolving an initial velocity into simple components.
+- Finding time to reach maximum height using a given vertical velocity.
+
+Characteristics:
+
+- Usually one equation.
+- Small, manageable values.
+- Simple launch angles.
+- Direct substitution.
+- Minimal rearrangement.
+
+### LEVEL 2 — Basic
+
+Questions should require one or two steps.
+
+Examples:
+
+- Finding horizontal velocity from initial velocity and launch angle.
+- Finding vertical velocity after a specified time.
+- Finding maximum height from initial vertical velocity.
+- Finding the time of flight of a horizontally launched object.
+- Finding horizontal range using time and horizontal velocity.
+
+Characteristics:
+
+- Introduce trigonometric components.
+- Require simple equation rearrangement.
+- Include basic word problems.
+- Use both horizontal and vertical motion equations.
+- Require correct units.
+
+### LEVEL 3 — Moderate
+
+Questions should require multiple steps or more careful reasoning.
+
+Examples:
+
+**Example A:**
+
+A projectile is launched at 20 m/s at 30° above the horizontal. Find its maximum height.
+
+**Example B:**
+
+A ball rolls horizontally off a 20-meter-high building at 8 m/s. Find its time of flight and horizontal range.
+
+**Example C:**
+
+An object is launched at 25 m/s at 45°. Find its final vertical velocity after 2 seconds.
+
+Characteristics:
+
+- Combine two equations.
+- Require resolving velocity components.
+- Include trigonometry.
+- Require equation rearrangement.
+- Include horizontal and vertical motion together.
+- Introduce elevated launch positions.
+
+### LEVEL 4 — Challenging
+
+Questions should require several steps and more careful reasoning.
+
+Examples:
+
+**Example A:**
+
+A projectile is launched from a 15-meter-high platform at 24 m/s and 35° above the horizontal. Determine its total time of flight and horizontal range.
+
+**Example B:**
+
+A projectile reaches a maximum height of 30 meters above its launch point and has an initial horizontal velocity of 18 m/s. Determine its initial speed and horizontal range, assuming it lands at its original height.
+
+**Example C:**
+
+A ball is launched at an unknown angle with an initial speed of 30 m/s. Its horizontal velocity is 24 m/s. Determine its launch angle, maximum height, and total time of flight.
+
+Characteristics:
+
+- Combine at least three calculation steps in many questions.
+- Require multiple kinematic equations.
+- Include unknown launch angles.
+- Include elevated launches.
+- Require solving quadratic equations where appropriate.
+- Include vector magnitude and direction.
+- Require careful sign conventions.
+- Include multi-part scenarios.
+
+### LEVEL 5 — Very Difficult
+
+**Level 5 must be genuinely difficult. Do not simply increase the initial velocity or change the numbers in Level 3 questions.**
+
+Questions must challenge students to combine multiple kinematic equations, trigonometry, vector calculations, and algebraic rearrangement.
+
+Most Level 5 questions should require at least three different calculation stages and involve finding multiple unknown quantities.
+
+Use question types such as:
+
+**Type A: Elevated launch with multiple unknowns**
+
+A projectile is launched from a 40-meter-high platform at an initial speed of 32 m/s and an angle of 38° above the horizontal.
+
+Determine:
+
+1. The initial horizontal velocity.
+2. The initial vertical velocity.
+3. The total time of flight.
+4. The horizontal range.
+5. The final velocity magnitude immediately before impact.
+
+**Type B: Work backward from final velocity**
+
+A projectile lands 75 meters horizontally from its launch point after 4 seconds. Its vertical displacement is -20 meters.
+
+Determine:
+
+1. Its initial horizontal velocity.
+2. Its initial vertical velocity.
+3. Its initial velocity magnitude.
+4. Its launch angle.
+5. Its final velocity magnitude.
+
+**Type C: Finding an unknown launch angle**
+
+A projectile is launched at a speed of 35 m/s from ground level and lands at the same elevation. Its horizontal range is 100 meters.
+
+Determine the possible launch angles.
+
+Account for the possibility of two complementary angles when applicable.
+
+**Type D: Finding initial velocity from maximum height and range**
+
+A projectile launched from ground level reaches a maximum height of 25 meters and travels a horizontal range of 100 meters before returning to its launch height.
+
+Determine:
+
+1. Initial vertical velocity.
+2. Time of flight.
+3. Initial horizontal velocity.
+4. Initial velocity magnitude.
+5. Launch angle.
+
+**Type E: Finding the position and velocity at a specific time**
+
+A projectile is launched from a 12-meter-high platform at 28 m/s and 52° above the horizontal.
+
+After 2.5 seconds, determine:
+
+1. Horizontal displacement.
+2. Vertical displacement.
+3. Horizontal velocity.
+4. Vertical velocity.
+5. Resultant velocity magnitude.
+6. Direction of velocity relative to the horizontal.
+
+**Type F: Quadratic time problems**
+
+Provide the vertical position of a projectile and ask students to determine the possible times at which it reaches that height.
+
+Require students to distinguish between:
+
+- The ascending part of the trajectory.
+- The descending part of the trajectory.
+- The highest point.
+
+**Type G: Conceptual error analysis**
+
+Present an incorrect student solution and ask which step contains the error.
+
+Possible mistakes:
+
+- Using sine instead of cosine for horizontal velocity.
+- Treating horizontal acceleration as equal to gravity.
+- Assuming vertical velocity remains constant.
+- Assuming final velocity is zero at maximum height.
+- Forgetting to account for initial launch height.
+- Using the wrong sign for gravitational acceleration.
+- Using the same-height time-of-flight formula for an elevated launch.
+- Confusing maximum height above the ground with height above the launch point.
+
+**Type H: Multi-stage projectile scenarios**
+
+Generate problems where students must work backward from a final condition to determine initial conditions, then use those conditions to calculate other quantities.
+
+Examples include finding the initial speed, launch angle, maximum height, time of flight, and final velocity from a combination of known displacement and time.
+
+Level 5 requirements:
+
+- Most questions must require at least three separate calculation stages.
+- Include both forward and reverse calculations.
+- Include elevated launch positions.
+- Include unknown launch angles.
+- Include quadratic equations for time.
+- Include vector magnitude and direction.
+- Combine horizontal and vertical equations.
+- Include problems requiring students to identify the correct equation before substituting values.
+- Include multi-part conceptual and calculation questions.
+- Avoid making the difficulty depend solely on large numbers or excessive decimal places.
+
+**Important:** Level 5 must test whether students understand the relationships between projectile motion variables, not simply whether they can substitute numbers into formulas.
+
+## Randomization Options
+
+Provide two independent settings.
+
+### Random Difficulty
+
+When enabled, each new question randomly selects one of the difficulty levels chosen by the student.
+
+There must be no gradual difficulty progression.
+
+Example:
+
+Level 2 → Level 5 → Level 3 → Level 5 → Level 1
+
+### Random Topic
+
+When enabled, each new question randomly selects one of the topics chosen by the student.
+
+If disabled, cycle through the selected topics in a reasonable order.
+
+Random Difficulty and Random Topic must work independently.
+
+---
+
+# 5. PRACTICE QUESTION SCREEN
+
+Display the following:
+
+- Topic.
+- Difficulty Level.
+- Question.
+- Four multiple-choice answers.
+
+The student selects an answer and presses:
+
+**SUBMIT ANSWER**
+
+After submission:
+
+- Clearly indicate whether the answer is correct or incorrect.
+- Display the correct answer.
+- Show the appropriate kinematic equation.
+- Identify the known and unknown quantities.
+- Explain why the selected equation applies.
+- Show the formula rearrangement.
+- Substitute the given values.
+- Show the calculation steps.
+- Display the final answer with correct units.
+- Explain common mistakes when useful.
+- Do not award points.
+
+Then display:
+
+**NEXT QUESTION**
+
+Allow students to continue indefinitely and return to the configuration screen at any time.
+
+## Mathematical Expression Rendering
+
+Mathematical expressions must be displayed professionally and correctly.
+
+Requirements:
+
+- Render equations with proper superscripts and subscripts.
+- Display vectors and components clearly.
+- Display fractions correctly.
+- Render square roots and trigonometric functions properly.
+- Display degrees and units correctly.
+- Distinguish between \(v_x\), \(v_y\), \(v_i\), and \(v_f\).
+- Use clear negative signs and parentheses.
+- Avoid raw LaTeX code appearing in the interface.
+
+Use a suitable math-rendering library such as KaTeX if appropriate, but ensure the application can still be deployed to GitHub Pages.
+
+Equations must remain readable on mobile devices.
+
+## Units
+
+Use SI units throughout:
+
+- Displacement: meters (m).
+- Velocity: meters per second (m/s).
+- Acceleration: meters per second squared (m/s²).
+- Time: seconds (s).
+- Angles: degrees (°).
+
+Every numerical answer must include the appropriate unit.
+
+Apply consistent rounding, preferably to two decimal places when necessary.
+
+Do not round intermediate calculations unnecessarily. Keep full precision internally and round only the final displayed answer.
+
+---
+
+# 6. MOCK TEST MODE
+
+Mock Test Mode should simulate an actual physics test.
+
+Students must configure the test before starting.
+
+## Number of Questions
+
+Provide common options:
+
+- 5
+- 10
+- 15
+- 20
+- 25
+- 30
+
+Also allow a custom number of questions.
+
+Do not force students to use a fixed number.
+
+## Topic Selection
+
+Use the same ten topics listed in Practice Mode.
+
+Provide:
+
+- SELECT ALL
+- CLEAR ALL
+
+At least one topic must be selected.
+
+Try to distribute questions reasonably across the selected topics when enough questions are requested.
+
+## Difficulty
+
+There must be **NO manual difficulty selection in Mock Test Mode**.
+
+Each question must receive a randomly selected difficulty from Levels 1–5.
+
+The difficulty must be selected independently for every question, with no progression from easy to difficult.
+
+For example:
+
+Question 1 → Level 4
+
+Question 2 → Level 1
+
+Question 3 → Level 5
+
+Question 4 → Level 2
+
+Question 5 → Level 3
+
+**Level 5 questions must retain their full complexity in Mock Test Mode.**
+
+The test should contain a reasonable mixture of conceptual questions, direct calculations, and multi-step projectile motion problems.
+
+---
+
+# 7. MOCK TEST QUESTION SCREEN
+
+Display:
+
+- Question X of Y.
+- Topic.
+- Difficulty Level.
+- Question.
+- Four multiple-choice answers.
+
+Provide:
+
+- PREVIOUS
+- NEXT
+- SUBMIT TEST
+
+Students must be able to move between questions and change their answers before submitting.
+
+Do not reveal whether an answer is correct during the test.
+
+Do not show explanations or solutions before the test is submitted.
+
+Keep unanswered questions visible to the student so they can return to them.
+
+Ask for confirmation before submitting a test with unanswered questions.
+
+---
+
+# 8. MOCK TEST RESULTS
+
+After submission, show:
+
+**TEST COMPLETE**
+
+Display:
+
+- Number correct.
+- Number incorrect.
+- Percentage score.
+- A list of all questions.
+- The student's selected answer.
+- The correct answer.
+- The topic.
+- The difficulty level.
+- The complete step-by-step solution.
+- The formulas used.
+- The final numerical answer with units.
+
+For incorrect answers, explain the relevant kinematic equation and identify the likely source of the mistake when possible.
+
+Allow students to expand individual questions to review their solutions.
+
+Include:
+
+- RETAKE TEST
+- RETURN TO HOME
+
+Retaking the test should generate a new set of questions rather than automatically repeating the previous test.
+
+Do not include XP, coins, or game mechanics.
+
+---
+
+# 9. QUESTION GENERATION
+
+Question generation is one of the most important parts of the website.
+
+**Do not build a reviewer that merely cycles through a small collection of hardcoded questions.**
+
+Create a local question-generation engine that can produce varied, mathematically valid questions based on the selected topics and difficulty.
+
+The question engine should vary:
+
+- Initial velocities.
+- Final velocities.
+- Launch angles.
+- Initial heights.
+- Horizontal displacements.
+- Vertical displacements.
+- Times.
+- Gravitational acceleration.
+- Known and unknown variables.
+- Question wording.
+- Real-world scenarios.
+- Multiple-choice answer ordering.
+
+Use a combination of:
+
+1. Parameterized question templates.
+2. Randomly generated valid scenarios.
+3. Physics equation solvers.
+4. Predefined complex problem structures with randomized parameters.
+5. Conceptual and error-analysis question templates.
+
+Do not make every question structurally identical.
+
+## Question Diversity
+
+For each topic, create several distinct question types.
+
+For velocity components, vary launch speeds and angles.
+
+For initial and final velocity, include both direct and reverse calculations.
+
+For time of flight, include same-height and different-height scenarios.
+
+For maximum height, distinguish height relative to the launch point and height relative to the ground.
+
+For horizontal range, include same-height and elevated-launch scenarios.
+
+For horizontal projectile motion, include different heights, horizontal velocities, and final velocity calculations.
+
+For angled projectile motion, include different launch angles and both positive and negative vertical displacements.
+
+For mixed problems, require several equations and multiple unknowns.
+
+For Level 5, include reverse calculations, multi-stage scenarios, quadratic time equations, and vector calculations.
+
+Avoid making every question a simple substitution exercise.
+
+## Distractors
+
+Every multiple-choice question should have four answer options.
+
+Generate plausible distractors based on common student mistakes, including:
+
+- Using sine instead of cosine.
+- Using cosine instead of sine.
+- Forgetting to square velocity when calculating maximum height.
+- Forgetting to divide by two in vertical displacement equations.
+- Using the wrong gravitational acceleration sign.
+- Treating horizontal acceleration as equal to gravity.
+- Assuming vertical velocity is constant.
+- Confusing initial velocity with final velocity.
+- Using the wrong launch angle.
+- Forgetting to include initial height.
+- Using the same-height time-of-flight equation for elevated launches.
+- Confusing horizontal range with total displacement.
+- Incorrectly calculating vector magnitude.
+- Confusing the direction of velocity with the launch angle.
+
+Do not create obviously absurd answer choices.
+
+The correct answer must be randomly placed among the four options.
+
+Avoid duplicate answer choices.
+
+For numerical questions, use distractors that represent realistic calculation mistakes rather than random numbers.
+
+---
+
+# 10. MATHEMATICAL AND PHYSICAL ACCURACY
+
+**Physical and mathematical correctness takes priority over question quantity or visual design.**
+
+The application must determine the correct answer before displaying the question.
+
+For every generated question, determine:
+
+1. The correct answer.
+2. The relevant equations.
+3. The known quantities.
+4. The unknown quantities.
+5. The complete solution steps.
+6. The plausible incorrect answers.
+7. The explanation.
+8. The appropriate units.
+9. The sign convention.
+
+The displayed answer and explanation must agree.
+
+## Equation Solver
+
+Create a reliable local calculation engine using the standard projectile motion equations.
+
+Horizontal motion:
+
+\[
+\Delta x=v_{ix}t
+\]
+
+\[
+v_{fx}=v_{ix}
+\]
+
+\[
+a_x=0
+\]
+
+Vertical motion:
+
+\[
+\Delta y=v_{iy}t-\frac12gt^2
+\]
+
+\[
+v_{fy}=v_{iy}-gt
+\]
+
+\[
+v_{fy}^2=v_{iy}^2-2g\Delta y
+\]
+
+Velocity components:
+
+\[
+v_{ix}=v_i\cos\theta
+\]
+
+\[
+v_{iy}=v_i\sin\theta
+\]
+
+Resultant velocity:
+
+\[
+v_f=\sqrt{v_{fx}^2+v_{fy}^2}
+\]
+
+Velocity direction:
+
+\[
+\phi=\tan^{-1}\left(\frac{v_{fy}}{v_{fx}}\right)
+\]
+
+Use the appropriate quadrant when determining the direction of the final velocity.
+
+For same-height launches:
+
+\[
+T=\frac{2v_i\sin\theta}{g}
+\]
+
+\[
+H=\frac{v_i^2\sin^2\theta}{2g}
+\]
+
+\[
+R=\frac{v_i^2\sin(2\theta)}{g}
+\]
+
+For horizontal launches:
+
+\[
+T=\sqrt{\frac{2h}{g}}
+\]
+
+\[
+R=v_xt
+\]
+
+These equations must be applied only when their assumptions are satisfied.
+
+## Sign Convention
+
+Use a consistent coordinate system:
+
+- Positive horizontal direction: direction of launch.
+- Positive vertical direction: upward.
+- Gravitational acceleration: \(-g\).
+
+Make sure all equations, substitutions, and answers follow this convention.
+
+For example:
+
+\[
+a_y=-9.8\text{ m/s}^2
+\]
+
+When a projectile is launched horizontally:
+
+\[
+v_{iy}=0
+\]
+
+When a projectile reaches its highest point:
+
+\[
+v_{fy}=0
+\]
+
+However, its horizontal velocity remains unchanged.
+
+## Different Launch and Landing Heights
+
+Do not assume every projectile lands at the same height from which it was launched.
+
+For different launch and landing heights, use:
+
+\[
+\Delta y=v_{iy}t-\frac12gt^2
+\]
+
+Solve the resulting quadratic equation for time.
+
+Reject negative time solutions.
+
+If two positive solutions exist for reaching a particular height, distinguish between the ascending and descending portions of the trajectory.
+
+## Vector Calculations
+
+Treat velocity as a vector.
+
+The magnitude of final velocity is:
+
+\[
+v_f=\sqrt{v_{fx}^2+v_{fy}^2}
+\]
+
+The direction must be calculated using the correct quadrant and reference axis.
+
+Do not incorrectly calculate final velocity by simply adding horizontal and vertical velocity magnitudes.
+
+## Answer Verification
+
+Before displaying a question:
+
+- Verify that the scenario is physically possible.
+- Verify that all given values are consistent.
+- Verify that the correct answer follows from the equations.
+- Verify that the generated distractors are incorrect.
+- Ensure the correct option exists exactly once.
+- Verify that every solution step follows valid physics equations.
+- Confirm that units are correct.
+- Confirm that rounding does not create duplicate choices.
+- Reject and regenerate invalid questions.
+
+**Never mark an incorrect answer as correct. Never show a solution that contradicts the displayed answer.**
+
+---
+
+# 11. UI DESIGN
+
+Use a simple retro educational computer aesthetic.
+
+Suggested design:
+
+- Off-white or light gray background.
+- Dark text.
+- Muted green, brown, or amber accents.
+- Pixel-inspired headings.
+- Rectangular buttons.
+- Thin borders.
+- Simple card layouts.
+- Small retro decorative elements.
+- Minimal animations.
+- Readable mathematical notation.
+
+The website should feel like an old educational computer program without sacrificing modern usability.
+
+Avoid:
+
+- Excessive neon colors.
+- Flashing elements.
+- Huge animations.
+- Excessive gradients.
+- Cluttered layouts.
+- Tiny text.
+- Overly decorative fonts for mathematical expressions.
+
+Questions and answer choices must be the most visually important elements.
+
+---
+
+# 12. RESPONSIVENESS
+
+The website must work on:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Requirements:
+
+- The layout must adapt to smaller screens.
+- Mathematical expressions must not overflow their containers.
+- Answer choices must remain easy to tap.
+- Configuration options must remain accessible.
+- Navigation buttons must fit on narrow screens.
+- Text must remain readable without unnecessary zooming.
+
+---
+
+# 13. NAVIGATION
+
+Build the website as a single-page application.
+
+Use views within the same application:
+
+**Home → Mode Selection → Configuration → Questions → Results**
+
+Provide clear BACK buttons wherever appropriate.
+
+Preserve the current test state during normal navigation.
+
+If the page is accidentally refreshed, preserve the active session when reasonably possible using local storage or another browser-only method.
+
+Do not rely on server-side routing.
+
+---
+
+# 14. GITHUB PAGES COMPATIBILITY
+
+The completed project must be deployable to GitHub Pages as a static website.
+
+Technical requirements:
+
+- Use static HTML, CSS, and JavaScript, or a frontend framework that builds into static files.
+- Do not require a backend server or database.
+- Do not require an API key.
+- Do not require an external AI service at runtime.
+- Perform question generation and answer checking locally in the browser.
+- Include all required configuration files and dependencies.
+- Ensure all asset paths work under a repository subpath, such as `https://username.github.io/repository-name/`.
+- Configure the base path correctly if using React, Vite, or another framework.
+- Ensure refreshing the page does not cause routing errors.
+- Use browser-compatible JavaScript.
+- Avoid dependencies on services that require paid hosting.
+
+If a math-rendering library is used, ensure it is loaded reliably and does not prevent the rest of the reviewer from functioning.
+
+## Deployment Instructions
+
+Provide clear instructions for:
+
+1. Exporting the generated project.
+2. Uploading the project files to a GitHub repository.
+3. Enabling GitHub Pages.
+4. Building and deploying the project if necessary.
+5. Opening the published website.
+
+---
+
+# 15. FINAL REQUIREMENTS
+
+Generate a **complete, working website**, not merely a visual mockup or a partially functional prototype.
+
+All buttons, checkboxes, difficulty settings, topic selections, randomization settings, question generation, answer checking, mathematical rendering, and mock test functions must work.
+
+Prioritize the following in order:
+
+1. Physical and mathematical accuracy.
+2. Correct implementation of projectile motion equations.
+3. Genuine question variety.
+4. Challenging Level 5 questions.
+5. Useful step-by-step explanations.
+6. Correct SI units and sign conventions.
+7. Functional Practice Mode and Mock Test Mode.
+8. Retro visual design.
+9. GitHub Pages compatibility.
+
+**The most important requirement is that Level 5 must be genuinely difficult.** It should regularly challenge students with multi-stage projectile motion problems, reverse calculations, elevated launches, unknown launch angles, quadratic time equations, and vector calculations involving final velocity magnitude and direction.
+
+Do not satisfy this requirement by simply increasing the initial velocity or changing numerical values. Increase the complexity of the reasoning and the number of equations students must combine.
+
+The final product should be a reliable, student-friendly physics reviewer that helps students master Projectile Motion through varied practice, challenging multi-step problems, and clear mathematical explanations.

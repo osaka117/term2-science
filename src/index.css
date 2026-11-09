@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@layer base {
+  /* DEFAULT: DARK RETRO TERMINAL */
+  :root {
+    --bg-color: #0f1512;
+    --card-bg: #16201b;
+    --text-primary: #e6ede8;
+    --text-muted: #85998d;
+    --border-color: #2b3e32;
+    --accent: #3cd077;
+    --accent-hover: #48e284;
+    --accent-light: #182d20;
+    --highlight: #facc15;
+  }
+
+  body.theme-green {
+    --bg-color: #071009;
+    --card-bg: #0c1a10;
+    --text-primary: #52e389;
+    --text-muted: #2f8e56;
+    --border-color: #38b46d;
+    --accent: #3cd077;
+    --accent-hover: #29b862;
+    --accent-light: #122e1b;
+    --highlight: #9fff80;
+  }
+
+  body.theme-amber {
+    --bg-color: #120c03;
+    --card-bg: #1a1206;
+    --text-primary: #ffb834;
+    --text-muted: #a67219;
+    --border-color: #d48b16;
+    --accent: #f59f00;
+    --accent-hover: #d97706;
+    --accent-light: #3d2806;
+    --highlight: #fef08a;
+  }
+
+  body.theme-paper {
+    --bg-color: #f3efe6;
+    --card-bg: #fcfbf9;
+    --text-primary: #1e2420;
+    --text-muted: #57655e;
+    --border-color: #2b3a32;
+    --accent: #2e6047;
+    --accent-hover: #234c38;
+    --accent-light: #e5ede8;
+    --highlight: #b8621b;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Share Tech Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+}
+
+.font-pixel {
+  font-family: 'VT323', monospace;
+  letter-spacing: 0.05em;
+}
+
+.font-tech {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Retro UI helpers */
+.retro-border {
+  border: 2px solid var(--border-color);
+  box-shadow: 3px 3px 0px var(--border-color);
+}
+
+.retro-border-sm {
+  border: 1px solid var(--border-color);
+  box-shadow: 2px 2px 0px var(--border-color);
+}
+
+.retro-border-inset {
+  border: 2px solid var(--border-color);
+  box-shadow: inset 2px 2px 0px rgba(0,0,0,0.4);
+}
+
+.retro-btn {
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+  box-shadow: 3px 3px 0px var(--border-color);
+  transition: all 0.08s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.retro-btn:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--border-color);
+}
+
+.retro-btn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--border-color);
+}
+
+.retro-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: 1px 1px 0px var(--border-color);
+}
+
+.retro-btn-accent {
+  background-color: var(--accent);
+  color: #0b140e;
+  border: 2px solid var(--border-color);
+  box-shadow: 3px 3px 0px var(--border-color);
+  transition: all 0.08s ease;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+body.theme-paper .retro-btn-accent {
+  color: #ffffff;
+}
+
+.retro-btn-accent:hover:not(:disabled) {
+  background-color: var(--accent-hover);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--border-color);
+}
+
+.retro-btn-accent:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--border-color);
+}
+
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.15) 50%
+  );
+  background-size: 100% 4px;
+}

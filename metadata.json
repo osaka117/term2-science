@@ -1,0 +1,6 @@
+{
+  "name": "Retro Projectile Motion Physics Reviewer",
+  "description": "A retro-style mathematics reviewer for practicing and mastering ideal projectile motion kinematics, featuring dynamic problem generation across 5 difficulty levels, step-by-step solutions, and mock tests.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
